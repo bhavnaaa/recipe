@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="images/image.png">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="add-recipe.html">Add Recipe</a>
+        </nav>
+    </header>
+
+    <!-- Add Recipe Section -->
+    <main class="main-content">
+        <section class="add-recipe-section">
+            <h2>Add a New Recipe</h2>
+            <form id="add-recipe-form">
+                <label for="recipe-title">Recipe Title:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
+    
+                <label for="recipe-image">Recipe Image URL:</label>
+                <input type="url" id="recipe-image" name="recipe-image" required>
+    
+                <label for="recipe-ingredients">Ingredients (comma-separated):</label>
+                <textarea id="recipe-ingredients" name="recipe-ingredients" required></textarea>
+    
+                <label for="recipe-instructions">Instructions:</label>
+                <textarea id="recipe-instructions" name="recipe-instructions" required></textarea>
+    
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    
+        <!-- Images Section -->
+        <section class="images-section">
+            <img src="images/imgfood.jpg" alt="Recipe 1">
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Recipe Sharing Platform | Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

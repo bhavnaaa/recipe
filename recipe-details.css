@@ -1,0 +1,117 @@
+/* Base styles for body */
+body {
+    font-family: Arial, sans-serif; /* Change font family */
+    margin: 0; /* Remove default margin */
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo image styling */
+.header img {
+    height: 100px;
+    width:200px; /* Set a fixed height for the logo */
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Navigation links */
+.nav a {
+    color: #EAEAEA;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav a:hover {
+    background-color: black;
+    color: #FFD700;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex; /* Use flexbox for layout */
+    padding: 2rem; /* Add padding for main content */
+    gap: 2rem; /* Space between image and text */
+}
+
+/* Recipe image container styling */
+.image-container {
+    flex: 0 0 40%; /* Fixed width for image container */
+    display: flex; /* Center image */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+/* Recipe image styling */
+#recipe-image {
+    width:500px;
+    height:500px; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for image */
+}
+
+/* Recipe details section styles */
+.recipe-details {
+    flex: 1; /* Allow text to take remaining space */
+    background: white; /* White background for details section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the details section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Recipe title styling */
+.recipe-details h2 {
+    color: #333; /* Dark color for title */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+/* Section headings styling */
+.recipe-details h3 {
+    color: #555; /* Slightly lighter color for section headings */
+    margin-top: 1.5rem; /* Space above section headings */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding */
+    background: black; /* Dark background for footer */
+    color: #EAEAEA; /* Light text color */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .image-container {
+        flex: 1; /* Make image take full width */
+        margin-bottom: 2rem; /* Space below image */
+    }
+
+    /* Image styling for small screens */
+    #recipe-image {
+        margin-top: 0; /* Remove margin for image on small screens */
+    }
+}
